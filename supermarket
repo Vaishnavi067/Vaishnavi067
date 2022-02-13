@@ -25,5 +25,7 @@ elif bill>1000:
     tax=bill*18/100
 else:
     dis=0
+    tax=0
+    print(bill)
 mainbill=bill-dis+tax
 print('total bill:',mainbill)
