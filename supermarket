@@ -1,0 +1,29 @@
+salt=60
+milkpck=30
+shampoo=50
+dal=40
+pens=10
+cname=input('enter customer name')
+cphno=int(input('customer number'))
+saltq=int(input('no.of salt packets'))
+milkpckq=int(input('no.of milk packets'))
+shampooq=int(input('no.of shampoo bottles'))
+dalq=int(input('no.of dal packets'))
+pensq=int(input('no.of pens'))
+bill=salt*saltq+milkpck*milkpckq+shampoo*shampooq+dal*dalq+pens*pensq
+if bill>5000:
+  dis=bill*10/100
+  tax=bill*10/100
+elif bill>3000:
+   dis=bill*8/100
+   tax=bill*10/100
+elif bill>2000:
+    dis=bill*5/100
+    tax=bill*18/100
+elif bill>1000:
+    dis=bill*3/100
+    tax=bill*18/100
+else:
+    dis=0
+mainbill=bill-dis+tax
+print('total bill:',mainbill)
