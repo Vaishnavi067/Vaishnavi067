@@ -1,0 +1,17 @@
+a=int(input("enter a value"))
+l=[]
+p=[]
+n=[]
+for i in range(a):
+    x=int(input())
+    l.append(x)
+print(l)
+x=0
+for i in range(a):
+    if l[i]>0:
+        p.append(l[i])
+for i in range(x,a):
+    if l[i]<0:
+        n.append(l[i])
+        x=x+1
+print(p," ",n)
