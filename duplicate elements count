@@ -1,0 +1,15 @@
+l=[]
+c=0
+n=int(input("enter n value"))
+for i in range(n):
+    k=int(input())
+    l.append(k)
+print(l)
+p=[]
+for i in l:
+    if i not in p:
+        p.append(i)
+    else:
+        c=c+1
+print("count of duplicte elements",c)
+print("resultant list",p)
