@@ -1,0 +1,15 @@
+n=int(input())
+s=[]
+l=[]
+p=[]
+for i in range(n):
+    x=int(input())
+    l.append(x)
+    s.append(x)
+print(l)
+s.sort()
+for i in range(n):
+    for j in range(n):
+        if l[i]==s[j]:
+            p.append(j+1)
+print(p)
