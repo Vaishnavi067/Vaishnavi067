@@ -1,0 +1,11 @@
+x=input()
+x=x.lower()
+l=list(x)
+c=0
+for i in l:
+    if  i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+        continue
+    else:
+        c=c+1
+print(c)
+        
